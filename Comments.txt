@@ -1,0 +1,12 @@
+// Title of the program
+// 
+// Header Files
+// Main Function
+{
+	// Variable Declaration 
+	// Output Statement (Prompt)
+	// Input Statement
+	// Assignment Statment
+	// Output Statement (Prompt)
+	// Return Statement
+}

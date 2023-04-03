@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() {
+	char name[50];
+	int marks,i,n;
+	printf("How many Elements: ");
+	scanf("%d",&n);
+	FILE *fptr;
+    char c;
+	fptr=(fopen("C:\\Users\\GAGAN\\Desktop\\New folder\\Elements.txt","w"));
+	if(fptr==NULL) {
+		printf("Error!");
+	}
+	for (i=0;i<n;i++) {
+		printf("For Element %d\nEnter name: ",i+1);
+		scanf("%s",name);
+		fprintf(fptr,"\nName: %s \n",name);
+	}
+	fclose(fptr);
+    fptr=fopen("C:\\Users\\GAGAN\\Desktop\\New folder\\Elements.txt","r");
+    while(c!=EOF){
+        c=fgetc(fptr);
+        if(c==EOF){
+            break;
+        }else{
+            printf("%c",c);
+        }
+    }
+    fclose(fptr);
+    return 0;
+}
